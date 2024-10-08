@@ -4,7 +4,7 @@ float lengthPerSide = 100;
 //spacing of dice? (Recommended: 0)
 float spacingBTDice = 0;
 //you want chaos? (random size & spacing per click)
-boolean ehSureWhyNot = false;
+boolean ehSureWhyNot = true;
 
 //DISGUSTING CODE UNDER THIS LINE
 dice dice; //baby
@@ -53,7 +53,7 @@ void draw(){
  sum+=5;
  numOf5++;
  }
- else if (dice.rollAmount == 6){
+ else{
  sum+=6;
  numOf6++;
 }
@@ -110,7 +110,7 @@ class dice {
     ellipse(myX+(3*sideLength/4),myY+(3*sideLength/4),sideLength/8, sideLength/8);
     ellipse(myX+(sideLength/4),myY+(sideLength/4),sideLength/8, sideLength/8);
     }
-    if(position == 2){
+    else{
     ellipse(myX+(sideLength/4),myY+(3*sideLength/4),sideLength/8, sideLength/8);
     ellipse(myX+(3*sideLength/4),myY+(sideLength/4),sideLength/8, sideLength/8);
     }
@@ -121,7 +121,7 @@ class dice {
     ellipse(myX+(sideLength/4),myY+(sideLength/4),sideLength/8, sideLength/8);
     ellipse(myX+(sideLength/2),myY+(sideLength/2),sideLength/8, sideLength/8);
     }
-    if(position == 2){
+    else{
     ellipse(myX+(sideLength/4),myY+(3*sideLength/4),sideLength/8, sideLength/8);
     ellipse(myX+(3*sideLength/4),myY+(sideLength/4),sideLength/8, sideLength/8);
     ellipse(myX+(sideLength/2),myY+(sideLength/2),sideLength/8, sideLength/8);

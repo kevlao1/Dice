@@ -14,7 +14,7 @@ void setup(){
 }
 
 void draw(){
-  //background(220);
+  background(220);
   //variable hell
   int sum = 0;
   int numOf1 = 0;

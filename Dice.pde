@@ -7,7 +7,7 @@ float spacingBTDice = 0;
 boolean ehSureWhyNot = true;
 
 //DISGUSTING CODE UNDER THIS LINE
-dice dice; //baby
+dice oneDie; //baby
 void setup(){
  size(1000, 1000); 
  noLoop();
@@ -26,30 +26,30 @@ void draw(){
   int numOfDice = 0;
   int numOfRows = 0;
   int numPerRow = 0;
-  for(int y = 50; y<=750; y+=(dice.sideLength+dice.spacing)){
+  for(int y = 50; y<=750; y+=(oneDie.sideLength+oneDie.spacing)){
   numOfRows++;
   numPerRow++;
-  for(int x = 100; x <= 800; x+=(dice.sideLength+dice.spacing)){
-  dice = new dice(x, y, lengthPerSide, spacingBTDice);
-  dice.show();
-  dice.roll();
- if(dice.rollAmount == 1){
+  for(int x = 100; x <= 800; x+=(oneDie.sideLength+oneDie.spacing)){
+  oneDie = new dice(x, y, lengthPerSide, spacingBTDice);
+  oneDie.show();
+  oneDie.roll();
+ if(oneDie.rollAmount == 1){
  sum++;
  numOf1++;
  }
- else if (dice.rollAmount == 2){
+ else if (oneDie.rollAmount == 2){
  sum+=2;
  numOf2++;
  }
- else if (dice.rollAmount == 3){
+ else if (oneDie.rollAmount == 3){
  sum+=3;
  numOf3++;
  }
- else if (dice.rollAmount == 4){
+ else if (oneDie.rollAmount == 4){
  sum+=4;
  numOf4++;
  }
- else if (dice.rollAmount == 5){
+ else if (oneDie.rollAmount == 5){
  sum+=5;
  numOf5++;
  }

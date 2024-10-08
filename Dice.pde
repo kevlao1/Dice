@@ -4,7 +4,7 @@ float lengthPerSide = 100;
 //spacing of dice? (Recommended: 0)
 float spacingBTDice = 0;
 //you want chaos? (random size & spacing per click)
-boolean ehSureWhyNot = false;
+boolean ehSureWhyNot = true;
 
 //DISGUSTING CODE UNDER THIS LINE
 dice dice; //baby
